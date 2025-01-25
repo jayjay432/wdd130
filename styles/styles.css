@@ -1,5 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
-    --backgroud-color1:rgb(33, 33, 82);
+    --backgroud-color:rgb(33, 33, 82);
     --primary-color: darkblue;
     --text-color: white;
     --border-color: black;
@@ -12,7 +17,7 @@ nav {
 nav a {
     color: var(--text-color);
     display: block;
-    padding: 20px;
+    padding: 5px;
 }
 h1 {
     color: var(--primary-color);
@@ -32,18 +37,22 @@ main{
     max-width: 890px;
 }
 main img {
+    float: right;
     width: 150px;
     height: auto;
+    margin:1em;
 }
 
 aside {
+    position: relative;
     width: 20em;
-    margin: 1em;
-    border: 1px solid var(--border-color);
-    padding: 1em;
-    background-color: var(--backgroud-color) ;
-    color: var(--text-color);
     text-align: center;
+}
+aside h2{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    color: black;
 }
 
 aside img {
@@ -59,4 +68,13 @@ footer {
     margin-top: 1em;
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid var(--border-color) .1;
+    padding: 1rem;
+    background-color: var(--backgroud-color);
+    color: var(--text-color);
 }
