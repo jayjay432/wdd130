@@ -32,6 +32,10 @@ header, main, footer{
     padding: 0 20px;
 
 }
+header {
+    background-color: var(--primary-color);
+    margin-bottom: 50px;
+}
 
 .hero {
     position: relative;
@@ -146,12 +150,95 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1em 0 0 0;
     background-color: var(--accent2-color);
     height: 3rem;
+    margin-top: 20px;
 }
 
 footer nav a{
-
     padding-left: 1em;
+}
+
+/* the contact us page styling */
+
+h2 {
+    top: -15%;
+    left: 50px;
+    position: absolute;
+    font-size: 24px;
+    color: var(--primary-color);
+    background-color: white;
+    padding: 0 8px;
+}
+
+.contact-info {
+    position: relative;
+    border: 1px solid #03045e;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0.5em 2rem;
+}
+
+
+
+.contact-form {
+    padding: 1rem 5rem;
+
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.employee-profiles figure {
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+form {
+    width: 90%;
+    background-color: var(--accent2-color);
+    padding: 1rem ;
+    max-width: 100%;
+    margin: 1rem 1rem;
+} 
+
+form label {
+    margin-right: 1rem;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+} 
+
+form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 60px;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--primary-color);
 }

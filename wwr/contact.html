@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact infomation, form for inquiries.">
+    <title>Contact Us-Whitewater Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,200&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="company's logo">
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>If you have any questions or would like to make a reservation, please contact us using the form below or through the information provided:</p>
+                <ul>
+                    <li><strong>Address:</strong> 123 River St, Adventure City, WA 99999</li>
+                    <li><strong>Phone:</strong> (234) 9130-994-962</li>
+                    <li><strong>Email:</strong> info@whitewaterrafting.com</li>
+                </ul>
+            </div>
+            <!-- Google Map Embed -->
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <h1>Meet Our Team</h1>
+            <div class="employee-profiles">
+                
+                    <figure>
+                        <img src="./images/johndoe.jpeg" alt="Employee 1">
+                        <figcaption>John Doe - Rafting Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/janedoe.jpeg" alt="Employee 2">
+                        <figcaption>Jane Smith - Reservations Manager</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/bobbrown.jpg" alt="Employee 3">
+                        <figcaption>Bob Brown - Safety Coordinator</figcaption>
+                    </figure>
+               
+            </div>
+            <div class="contact-form">
+                <h1>Contact Form</h1>
+                <form action="submit_form.php" method="POST">
+                    <div>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                    
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </div>
+                    <div>
+                        <label>Purpose of Message:</label>
+                        <label><input type="radio" name="message_type" value="General Inquiry" required> General Inquiry</label><br>
+                        <label><input type="radio" name="message_type" value="Reservation Question"> Reservation Question</label>
+                        <label><input type="radio" name="message_type" value="Website Suggestion"> Website Suggestion</label>
+                    </div>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                    
+                    <input type="checkbox" id="subscribeNews" name="subscribe">
+                    <label for="subscribeNews">Subscribe to our newsletter</label>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            |White water rafting | Lawrence Joseph
+        </p>
+        <nav class="social-links">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>
+ 
