@@ -4,8 +4,8 @@
  	--accent1-color: #7C9885;
  	--accent2-color: #B5B682;
 
-    --heading-font: "Bebas Neue, sans-serif",
-    --body-font: "open sans, sans-serif", 
+    --heading-font: "Bebas Neue", sans-serif;
+    --body-font: "Open Sans", sans-serif;
 }
 
 * {
