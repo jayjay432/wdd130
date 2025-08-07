@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joseph Lawrence's WDD 130 student homepage. Learn HTML, CSS, and web design as he builds web projects from Ogun State, Nigeria.">
+    <meta name="author" content="Joseph Lawrence">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/poll-form.css">
+    <title>WDD 130 | HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Lawrence Joseph | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form action="submit">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Fullname:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">E-mail:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="favourite-browser">What is your favourite browser?</label>
+                    <select name="browsers" id="favourite-browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Fire Fox</option>
+                        <option value="explora">Explora</option>
+                        <option value="thor">Thor</option>
+                        <option value="brave">Brave</option>
+                        <option value="safari">Safari</option>
+                        <option value="opera mini">Opera Mini</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet"></div>
+                <label for="feedback">List three place you have lived.</label>
+                <textarea name="feedback" id="feedback" placeholder="type your answer here" rows="4"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+
+        </form>
+    </main>
+    <footer>
+        &copy; 2025 | HTML Form - User Poll Activity | Lawrence Joseph
+    </footer>
+</body>
+</html>
