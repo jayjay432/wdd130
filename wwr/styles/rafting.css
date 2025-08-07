@@ -19,6 +19,31 @@ body {
     color: var(--accent1-color);
 }
 
+header {
+    display: grid;
+    align-items: center;
+    /* background-color: var(--primary-color); */
+}
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header img {
+    grid-column: 1/2;
+    width: 100px;
+    height: auto;
+    grid-row: 1;
+    justify-self: center;    
+}
+
+header nav {
+    grid-column: 2/3;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 header, main, footer {
     width: 840px;
     margin: 0 auto;
@@ -32,6 +57,12 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+section h2 {
+    justify-self: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 .socialmedia a {
@@ -52,20 +83,19 @@ article {
     position: absolute;
     background-color: var(--accent1-color);
     color: white;
-    top: 6rem;
+    top: 12rem;
 }
 
 .hero article img {
     float: right ;
-    width: 125px ;
-    /* border-radius: 20px; */
+    width: 200px ;
     height: auto ;
-    /* padding-left: 1rem; */
+    padding: 1rem 1rem 1rem .7rem;
 }
 
 h1 {
     position: absolute;
-    top: 20px;
+    top: 5rem;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -73,3 +103,60 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
 }
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.wwr-adventures {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 150px;
+  margin: auto;
+}
+
+.wwr-adventure figure img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+footer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 600px 1fr;
+    border-top: 2px solid grey;
+}
+
+footer p {
+    justify-self: center;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer nav a img {
+    width: 30px;
+    height: auto;
+}
+
