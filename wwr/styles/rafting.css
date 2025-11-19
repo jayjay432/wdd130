@@ -3,8 +3,8 @@
     --secondary-color: #97d0a3;
     --accent1-color: #1b1c0d;
     --accent2-color: #74c0a0;
-    --heading-font: "Roboto", serif;
-    --body-font: "Open Sans", sans-serif;
+    --heading-font: "Times Romans", "Georgia", serif;
+    --body-font: "Arial", Helvetica , sans-serif;
 
 }
 
@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 header,
@@ -29,7 +29,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav,
@@ -58,10 +58,9 @@ article {
     top: 20px;
     width: 100%;
     text-align: center;
-    opacity: .7;
+    opacity: .8;
     padding: 1rem;
     background-color: var(--accent2-color);
-    color: #fff;
 }
 
 .hero article {
@@ -74,6 +73,7 @@ article {
     padding: 0.5rem;
     gap: 0.5rem;
     background-color: var(--secondary-color);
+    color: var(--accent1-color);
 
 }
 
